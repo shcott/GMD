@@ -1,0 +1,27 @@
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin: 22px 0;
+}
+
+div {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search-element:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+#search-results {
+  height: calc(95vh - 145px);
+  overflow-y: auto;
+}
+
+#play-queue {
+  height: calc(95vh - 125px);
+  overflow-y: auto;
+}
+
+.row-striped-odd {
+  background-color: rgba(0,0,0,0.02);
+}
