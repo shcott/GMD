@@ -54,8 +54,12 @@ app.controller("gmdCtrl", function($scope) {
   });
   
   $scope.clickSearchRow = function() {
-    $scope.songs.push({name:this.songInfo.name, artist:this.songInfo.artist, album:this.songInfo.album});
+    $scope.songs.push({name:this.songInfo.name, artist:this.songInfo.artist, album:this.songInfo.album, votes:0});
     $scope.searchResults = [];
     $("#search-input")[0].value = "";
+  };
+  
+  $scope.upvote = function() {
+    this.songInfo.votes++;
   };
 });
